@@ -1,4 +1,4 @@
-# Qwik App ⚡️
+# Deejock is a Qwik App ⚡️
 
 - [Qwik Docs](https://qwik.builder.io/)
 - [Discord](https://qwik.builder.io/chat)
@@ -64,4 +64,3 @@ The production build will generate client and server modules by running both cli
 ```shell
 npm run build # or `yarn build`
 ```
-# deejock
