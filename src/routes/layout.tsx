@@ -1,20 +1,20 @@
-import { component$, Fragment, Slot } from "@builder.io/qwik";
-import Header from "../components/header/header";
+import { component$, Fragment, Slot } from '@builder.io/qwik';
+
+import Header from '../components/header/header';
+import Leftbar from '../components/leftbar/leftbar';
+import Footer from '../components/footer/footer';
 
 export default component$(() => {
   return (
     <Fragment>
+      <Leftbar></Leftbar>
       <main>
         <Header />
         <section>
           <Slot />
         </section>
       </main>
-      <footer>
-        <a href="https://www.builder.io/" target="_blank">
-          Made with ♡ by Builder.io and Jesus Barcam
-        </a>
-      </footer>
+      <Footer></Footer>
     </Fragment>
   );
 });
