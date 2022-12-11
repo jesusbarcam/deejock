@@ -1,9 +1,8 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
 
-import styles from './header.scss?inline';
+import styles from './footer.scss?inline';
 
 export default component$(() => {
   useStylesScoped$(styles);
-
-  return <header>Este es el componente de header!</header>;
+  return <footer>Este es el footer</footer>;
 });
