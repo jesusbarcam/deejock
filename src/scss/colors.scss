@@ -1,0 +1,35 @@
+:root {
+  --qwik-dark-blue: #006ce9;
+  --qwik-light-blue: #18b6f6;
+  --qwik-light-purple: #ac7ff4;
+  --qwik-dark-purple: #713fc2;
+
+  --color-app-background: #ffffff;
+
+  --color-lightest-fuxia: #edf3f3;
+  --color-lighter-fuxia: #c0dbd9;
+  --color-medium-fuxia: #a2c1bf;
+  --color-hardest-fuxia: #485252;
+
+  --light-hue: 0, 0%;
+  --light-lightness: 100%;
+  --light-main-lightness: 100%;
+  --light-leftbar-lightness: 85%;
+
+  --light-main-color: hsl(var(--light-hue), var(--light-main-lightness));
+  --light-leftbar-color: hsl(var(--light-hue), var(--light-leftbar-lightness));
+
+  --dark-hue: 260, 4%;
+  --dark-saturation: 4%;
+  --dark-main-lightness: 17%;
+  --dark-leftbar-lightness: 10%;
+
+  --color-accent: #6ad1ca;
+  --dark-main-color: hsl(var(--dark-hue), var(--dark-main-lightness)); // hsl(260, 4%, 17%)
+  --dark-leftbar-color: hsl(var(--dark-hue), var(--dark-leftbar-lightness)); // hsl(260, 4%, 10%)
+
+  --in-dark-text-color: var(--color-hardest-fuxia);
+  --in-light-text-color: var(--color-lighter-fuxia);
+
+  --color-leftbar-background: var(--color-lightest-fuxia);
+}

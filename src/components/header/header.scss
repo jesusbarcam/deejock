@@ -1,0 +1,21 @@
+header {
+  grid-area: header;
+  border: 1px solid khaki;
+
+  .main-title {
+    font-family: 'Google Sans', Courier, monospace;
+    font-size: 25px;
+    font-weight: 400;
+    border: 2px solid orange;
+  }
+
+  .auth-wrap {
+    border: 2px solid orange;
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    .link {
+      color: var(--dark-text-color);
+    }
+  }
+}

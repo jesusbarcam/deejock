@@ -1,0 +1,31 @@
+.inner {
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .link {
+    position: relative;
+    color: var(--in-dark-text-color);
+    font-family: var(--font-family);
+    font-size: var(--font-menu-button-size);
+    font-weight: var(--font-thin-weight);
+
+    &.active {
+      font-weight: var(--font-bold-weight);
+    }
+  }
+
+  .active-background {
+    position: absolute;
+    top: 0;
+    left: -70%;
+    display: block;
+    width: 120%;
+    height: 100%;
+    background-color: var(--color-medium-fuxia);
+    border-radius: var(--border-radius);
+    opacity: 0.35;
+  }
+}

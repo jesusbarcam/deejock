@@ -1,0 +1,7 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-beetween-components);
+  width: 100%;
+}

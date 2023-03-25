@@ -1,0 +1,20 @@
+.layout-container {
+  display: grid;
+  grid-template-areas:
+    'leftbar  header'
+    'leftbar  main'
+    'leftbar  main'
+    'leftbar  footer';
+  grid-template-rows: 6rem 1fr 2rem;
+  grid-template-columns: 350px 1fr;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 1vh 1vw;
+  height: 98vh;
+  width: 98vw;
+}
+
+main {
+  grid-area: main;
+  border-radius: var(--border-radius);
+}

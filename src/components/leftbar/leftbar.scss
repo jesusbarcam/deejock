@@ -1,0 +1,14 @@
+aside {
+  grid-area: leftbar;
+  background-color: var(--color-leftbar-background);
+  color: var(--dark-text-color);
+  font-size: var(--font-paragraph-size);
+  border-radius: 5px;
+  padding: 2rem;
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
