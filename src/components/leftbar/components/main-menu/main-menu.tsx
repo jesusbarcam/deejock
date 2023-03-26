@@ -5,14 +5,15 @@ import { MenuLink } from './components/menu-link/menu-link';
 
 import styles from './main-menu.scss?inline';
 
-export const homePathName = '/home';
+export const homePathName = '/';
 export const artistsPathName = '/artists';
 export const labelsPathName = '/labels';
 
 export const MainMenu = component$(() => {
   useStylesScoped$(styles);
   const location = useLocation();
-  const isActived = (linkName: string) => location.pathname.startsWith(linkName);
+  const getLocationName = () => location.url.pathname.split('/').at(1);
+  const isActived = (buttonPathname: string) => `/${getLocationName()}` === buttonPathname ?? false;
 
   return (
     <div class="wrap">
